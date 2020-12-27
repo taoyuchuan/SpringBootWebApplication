@@ -6,13 +6,15 @@
     <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <script>
+         // Consumes POST API.
+         // Add a product in list.
          $(document).ready(function() {
             $("button").click(function() {
-               var productmodel = {
+               var productModel = {
                   id : "3",
                   name : "Ginger"
                };
-               var requestJSON = JSON.stringify(productmodel);
+               var requestJSON = JSON.stringify(productModel);
                $.ajax({
                   type : "POST",
                   url : "http://localhost:9090/products",

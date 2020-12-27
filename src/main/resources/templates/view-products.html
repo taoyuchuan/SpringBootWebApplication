@@ -6,6 +6,7 @@
     <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <script>
+         // Consume GET API and display all the products in page.
          $(document).ready(function(){
             $.getJSON("http://localhost:9090/products", function(result){
                $.each(result, function(key,value) {
