@@ -25,4 +25,13 @@ public class ViewController {
     public String addProducts() {
         return "add-products";
     }
+
+    /**
+     * Render view for locale.
+     * @return view
+     */
+    @RequestMapping("/locale")
+    public String locale() {
+        return "locale";
+    }
 }
